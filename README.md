@@ -3,6 +3,8 @@ interview work from Attenti
 
 1. the projects starts with seeting up the TestList.xml
       1.1 the xml contians test nodes and each node contain the test name,value that we want to test and expected result(if we have one)
+      1.2 the xml should be copied to the same directory as the attentiTest.exe
+      1.3 you can change the test value and expected result inside the xml.
 2. the main program read the xml and create a testList
 i run over the TestList and by the name of the test i decide which test method to choose.
 3. the Tests class initialize the IWebDriver and  contains all tests methods .
