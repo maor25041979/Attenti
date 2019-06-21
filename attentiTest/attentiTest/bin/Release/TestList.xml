@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<testList>
+  <test>
+    <name>CelsiusToFahrenheit</name>
+    <value>10</value>
+    <expectedResult>50.00000°F</expectedResult>
+  </test>
+  <test>
+    <name>MetersToFeet</name>
+    <value>10</value>
+    <expectedResult>32ft 9.700788in</expectedResult>
+  </test>
+  <test>
+    <name>OuncesToGrams</name>
+    <value>10</value>
+    <expectedResult>283.4952g</expectedResult>
+  </test>
+  <test>
+    <name>ValidTemp</name>
+    <value>20852</value>
+    <expectedResult></expectedResult>
+  </test>
+</testList>
