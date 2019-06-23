@@ -18,8 +18,7 @@ namespace attentiTest
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--start-maximized");
             options.AddExcludedArgument("ignore-certificate-errors");
-            //ChromeDriver driver = new ChromeDriver(@"C:\SeleniumDrivers\C#", options);
-            //ChromeDriver driver = new ChromeDriver(@"C:\Users\ma_al\Downloads\Attenti-master\Attenti-master\attentiTest\attentiTest\bin\Release\chromedriver", options);
+            //ChromeDriver driver = new ChromeDriver(@"C:\SeleniumDrivers\C#\chrome", options);
             ChromeDriver driver = new ChromeDriver(ChromeDriverPath, options);
             return driver;
         }
@@ -212,6 +211,15 @@ namespace attentiTest
                 driver.Navigate().GoToUrl("https://weather.com/");
 
                 wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@classname='styles__locationName__2hkcY']")));
+
+                if (driver.FindElement(By.XPath("//*[@class='styles__borderLeft__2zhrE']")).Text == "°C")
+                {
+                    driver.FindElement(By.XPath("//*[@class='styles__menuButton__3KeBe styles__button__4qZmw']")).Click();
+                    Thread.Sleep(1000);
+                    //wait.Until(d => d.FindElement(By.XPath("//*[@classname='styles__unitButton__3O3Sn styles__button__18dA-']")));
+                    driver.FindElement(By.XPath("//*[@class='styles__unitButton__3O3Sn styles__button__18dA-']")).Click();
+                }
+                
                 wait.Until(d => d.FindElement(By.XPath("//*[@classname='theme__inputElement__4bZUj input__inputElement__1GjGE']")));
                 var E =  driver.FindElement(By.XPath("//*[@class='theme__inputElement__4bZUj input__inputElement__1GjGE']"));
                 E.Click();
