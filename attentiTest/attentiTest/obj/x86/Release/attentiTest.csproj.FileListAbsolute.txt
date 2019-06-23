@@ -8,3 +8,4 @@ c:\users\ma_al\onedrive\documents\visual studio 2010\Projects\attentiTest\attent
 c:\users\ma_al\onedrive\documents\visual studio 2010\Projects\attentiTest\attentiTest\bin\Release\WebDriver.Support.xml
 c:\users\ma_al\onedrive\documents\visual studio 2010\Projects\attentiTest\attentiTest\obj\x86\Release\attentiTest.exe
 c:\users\ma_al\onedrive\documents\visual studio 2010\Projects\attentiTest\attentiTest\obj\x86\Release\attentiTest.pdb
+C:\Users\ma_al\OneDrive\Documents\Visual Studio 2010\Projects\attentiTest\attentiTest\obj\x86\Release\attentiTest.csprojResolveAssemblyReference.cache

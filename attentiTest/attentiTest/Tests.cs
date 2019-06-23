@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,13 @@ namespace attentiTest
     {
         public static IWebDriver initWebDriver()
         {
+            string ChromeDriverPath = Directory.GetCurrentDirectory() + @"\chromedriver";                               
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--start-maximized");
             options.AddExcludedArgument("ignore-certificate-errors");
-            ChromeDriver driver = new ChromeDriver(@"C:\SeleniumDrivers\C#", options);
+            //ChromeDriver driver = new ChromeDriver(@"C:\SeleniumDrivers\C#", options);
+            //ChromeDriver driver = new ChromeDriver(@"C:\Users\ma_al\Downloads\Attenti-master\Attenti-master\attentiTest\attentiTest\bin\Release\chromedriver", options);
+            ChromeDriver driver = new ChromeDriver(ChromeDriverPath, options);
             return driver;
         }
 
